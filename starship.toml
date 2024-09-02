@@ -5,8 +5,8 @@ $time\
 $hostname\
 $directory\
 $package\
-$git_branch
-$python\
+$git_branch\
+$python\n\
 $character\
 """
 
