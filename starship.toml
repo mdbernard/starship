@@ -6,7 +6,8 @@ $hostname\
 $directory\
 $package\
 $git_branch\
-$python\n\
+$python\
+$rust\n\
 $character\
 """
 
@@ -27,3 +28,15 @@ error_symbol = "[✗](bold red)"
 truncation_length = 3
 truncate_to_repo = true
 truncation_symbol = '.../'
+
+[package]
+format = '[$symbol$version]($style) '
+
+[git_branch]
+format = '[$symbol$branch(:$remote_branch)]($style) '
+
+[python]
+format = '[${symbol}${pyenv_prefix}(${version})( \($virtualenv\))]($style) '
+
+[rust]
+format = '[$symbol($version)]($style) '
